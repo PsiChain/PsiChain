@@ -1,0 +1,2 @@
+Abstract:
+The field of sustainability is one of the areas where the international community's efforts are limited and ineffective. As a result, Quantum Blockchain might be used to improve and promote the attainment of global goals. While the technology's first applications were centred on the financial sector, as it has grown, its applications have expanded to include other fields, such as sustainability, which is the subject of this research. This paper discusses how Quantum Blockchain can help achieve the United Nations' Sustainable Development Goals (SDGs).
