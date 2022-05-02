@@ -1,0 +1,8 @@
+psicrypto.egg-info
+build
+dist
+
+psicrypto/*.dll
+psicrypto/*.dylib
+psicrypto/*.so
+psicrypto/*.so.*

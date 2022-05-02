@@ -1,3 +1,90 @@
-# **Psi Chain**
 
-Psi Chain is a sustainable quantum blockchain. Quantum blockchain is a decentralised, encrypted, and distributed database based on quantum information theory and quantum computing. The data will not be tampered with after it has been recorded on the quantum blockchain. The advancement of quantum computing and quantum information theory has led to an increase in the number of researchers focusing on quantum blockchain research in recent years. Here, we examine recent breakthroughs in the realm of quantum blockchain and briefly discuss its benefits over traditional blockchain. The quantum blockchain's construction and structure are discussed. Then we'll go through how to apply quantum technology to a specific area of the larger blockchain.
+Psi Chain
+=====================================
+
+What is Psi Chain?
+----------------
+
+See https://psichain.org, or read the [original whitepaper](https://github.com/PsiChain/psi-chain/blob/main/psi-chain%20witepaper.pdf).
+
+License
+-------
+
+The Psi Chain is released under the terms of the MIT license. See [COPYING](COPYING) for more
+information or see https://opensource.org/licenses/MIT.
+
+Development Process
+-------------------
+
+The `master` branch is regularly built and tested, but is not guaranteed to be
+completely stable. [Tags](https://github.com/PsiChain/psichain/tags) are created
+regularly to indicate new official, stable release versions of the Psi Chain.
+
+Install
+-------
+
+### Linux
+```bash
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install --assume-yes build-essential libtool autotools-dev autoconf automake pkg-config libssl-dev libboost-all-dev libqt5gui5 libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler libqrencode-dev libminiupnpc-dev libevent-dev libdb++-dev git cmake
+```
+##### Install libsodium 
+If you have **Ubuntu 17.10** and higher
+
+```bash
+sudo apt-get install --assume-yes libsodium-dev
+```
+##### Install Botan-2.7.0 
+```bash
+wget https://botan.randombit.net/releases/Botan-2.7.0.tgz
+tar -xzvf Botan-2.7.0.tgz
+cd Botan-2.7.0/
+./configure.py --disable-modules=locking_allocator
+make
+sudo make install && cd ..
+sudo ldconfig
+
+# check if installed
+ldconfig -p | grep botan
+```
+
+### Mac OS X
+
+#### Homebrew packages
+
+```bash
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+```bash
+brew install autoconf automake berkeley-db4 boost miniupnpc pkg-config protobuf qt libtool libevent zeromq
+```
+
+#### MacPorts packages
+
+```bash
+sudo port install wget autoconf automake libtool pkgconfig libsodium boost libevent protobuf
+```
+
+### Install Psi Chain
+```bash
+git clone https://github.com/PsiChain/psichain
+cd psichain
+git submodule update --init
+./autogen.sh
+./configure  
+make
+```
+
+### Start Mainnet
+```bash
+cd src
+./bpqd -printtoconsole
+```
+
+### Start Testnet
+```bash
+cd src
+./bpqd -printtoconsole -testnet
+```

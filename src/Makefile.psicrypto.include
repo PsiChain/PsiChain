@@ -1,0 +1,52 @@
+LIBBPQ_BPQCRYPTO=psicrypto/libpsicrypto.a
+LIBBPQ_BPQCRYPTOL=psicrypto/libpsicrypto.la
+
+EXTRA_LIBRARIES += $(LIBBPQ_BPQCRYPTO)
+lib_LTLIBRARIES += $(LIBBPQ_BPQCRYPTOL)
+
+BPQCRYPTO_FILES = \
+    psicrypto/src/psicrypto.cpp \
+    psicrypto/src/bpqhash.cpp \
+    psicrypto/include/psicrypto.hpp \
+    psicrypto/src/xmss_address.h \
+    psicrypto/src/xmss_common_ops.cpp \
+    psicrypto/src/xmss_common_ops.h \
+    psicrypto/src/xmss_hash.cpp \
+    psicrypto/src/xmss_hash.h \
+    psicrypto/src/xmss_hashtree.h \
+    psicrypto/src/xmss_index_registry.cpp \
+    psicrypto/src/xmss_index_registry.h \
+    psicrypto/src/xmss_key_pair.h \
+    psicrypto/src/xmss_parameters.cpp \
+    psicrypto/src/xmss_parameters.h \
+    psicrypto/src/xmss_privatekey.cpp \
+    psicrypto/src/xmss_privatekey.h \
+    psicrypto/src/xmss_publickey.cpp \
+    psicrypto/src/xmss_publickey.h \
+    psicrypto/src/xmss_signature.cpp \
+    psicrypto/src/xmss_signature.h \
+    psicrypto/src/xmss_signature_operation.cpp \
+    psicrypto/src/xmss_signature_operation.h \
+    psicrypto/src/xmss_tools.cpp \
+    psicrypto/src/xmss_tools.h \
+    psicrypto/src/xmss_verification_operation.cpp \
+    psicrypto/src/xmss_verification_operation.h \
+    psicrypto/src/xmss_wots_addressed_privatekey.h \
+    psicrypto/src/xmss_wots_addressed_publickey.h \
+    psicrypto/src/xmss_wots_parameters.cpp \
+    psicrypto/src/xmss_wots_parameters.h \
+    psicrypto/src/xmss_wots_privatekey.cpp \
+    psicrypto/src/xmss_wots_privatekey.h \
+    psicrypto/src/xmss_wots_publickey.cpp \
+    psicrypto/src/xmss_wots_publickey.h
+
+psicrypto_libpsicrypto_a_SOURCES = $(BPQCRYPTO_FILES)
+psicrypto_libpsicrypto_a_CPPFLAGS = $(AM_CPPFLAGS) $(BOTAN_CFLAGS)
+psicrypto_libpsicrypto_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+
+psicrypto_libpsicrypto_la_SOURCES = $(BPQCRYPTO_FILES)
+psicrypto_libpsicrypto_la_CPPFLAGS = $(AM_CPPFLAGS) $(BOTAN_CFLAGS)
+psicrypto_libpsicrypto_la_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+
+#psicrypto_libpsicrypto_a_LIBADD = $(BOTAN_LIBS)
+#psicrypto_libpsicrypto_a_LDFLAGS = $(AM_LDFLAGS) -no-undefined $(RELDFLAGS)
