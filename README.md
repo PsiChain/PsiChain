@@ -5,7 +5,7 @@ Psi Chain
 What is Psi Chain?
 ----------------
 
-See https://psichain.org, or read the [original whitepaper](https://github.com/PsiChain/psi-chain/blob/main/psi-chain%20witepaper.pdf).
+See https://psichain.org, or read the [original whitepaper](https://github.com/PsiChain/PsiChain/blob/main/Psichain-Whitepaper.pdf).
 
 License
 -------
