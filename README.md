@@ -5,6 +5,7 @@ Psi Chain
 What is Psi Chain?
 ----------------
 
+Psi Chain aims to be the world’s first Quantum secured decentralized digital asset ledger that is EVM compatible with high performance and scalability.
 See https://psichain.org, or read the [original whitepaper](https://github.com/PsiChain/PsiChain/blob/main/Psichain-Whitepaper.pdf).
 
 License
