@@ -1,4 +1,4 @@
-// Copyright (c) 2018 The Psi Chain developers
+// Copyright (c) 2018 The PsiChain developers
 
 #ifndef _BPQ_FIRSTTRANSACTIONPAGE_H
 #define _BPQ_FIRSTTRANSACTIONPAGE_H

@@ -1,4 +1,4 @@
-// Copyright (c) 2018 The Psi Chain developers
+// Copyright (c) 2018 The PsiChain developers
 
 #include <botan/auto_rng.h>
 #include <botan/cipher_mode.h>

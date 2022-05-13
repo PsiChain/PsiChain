@@ -1,4 +1,4 @@
-// Copyright (c) 2018 The Psi Chain developers
+// Copyright (c) 2018 The PsiChain developers
 
 #ifndef BPQCRYPTO_BPQCRYPTO_H
 #define BPQCRYPTO_BPQCRYPTO_H

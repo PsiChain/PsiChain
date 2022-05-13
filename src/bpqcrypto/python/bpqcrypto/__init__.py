@@ -3,7 +3,7 @@
 #
 # python wrapper for BPQ Crypto Library
 # 
-# Copyright (c) 2018 The Psi Chain developers
+# Copyright (c) 2018 The PsiChain developers
 
 import sys
 import os

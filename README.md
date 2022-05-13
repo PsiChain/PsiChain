@@ -1,8 +1,8 @@
 
-Psi Chain
+PsiChain
 =====================================
 
-What is Psi Chain?
+What is PsiChain?
 ----------------
 
 Psi Chain aims to be the world’s first Quantum secured decentralized digital asset ledger that is EVM compatible with high performance and scalability.
@@ -11,7 +11,7 @@ See https://psichain.org, or read the [original whitepaper](https://github.com/P
 License
 -------
 
-The Psi Chain is released under the terms of the MIT license. See [COPYING](COPYING) for more
+The PsiChain is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
 
 Development Process
@@ -19,7 +19,7 @@ Development Process
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
 completely stable. [Tags](https://github.com/PsiChain/psichain/tags) are created
-regularly to indicate new official, stable release versions of the Psi Chain.
+regularly to indicate new official, stable release versions of the PsiChain.
 
 Install
 -------
@@ -68,7 +68,7 @@ brew install autoconf automake berkeley-db4 boost miniupnpc pkg-config protobuf 
 sudo port install wget autoconf automake libtool pkgconfig libsodium boost libevent protobuf
 ```
 
-### Install Psi Chain
+### Install PsiChain
 ```bash
 git clone https://github.com/PsiChain/psichain
 cd psichain
